@@ -1,0 +1,22 @@
+<br>
+<p>Please amend as appropriate.</p>
+<br>
+<form method = "post" action ="/pizza-orders/<%= @pizza_find.id %>/update">
+  <label for="first-name">First name:</label>
+  <input id="first-name" type="text" value="<%= @pizza_find.first_name %>" name = "first_name"/>
+
+  <label for="last-name">Last name:</label>
+  <input for="last-name" type="text" value="<%= @pizza_find.last_name %>" name= "last_name"/>
+
+  <label for="pizza-select">Select a Pizza</label>
+  <select name="topping" id="pizza-select"><
+    <option value="Margherita">Margherita</option>
+    <option value="Hawaiian">Hawaiian</option>
+     %>"
+  </select>
+
+  <label for="quantity">Quantity</label>
+  <input type="number" id="quantity" value="<%= @pizza_find.quantity %>" name="quantity"/>
+
+  <input type="submit" value="Amend Pizza"/>
+</form>

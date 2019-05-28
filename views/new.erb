@@ -1,0 +1,21 @@
+<br>
+<p>Make a new pizza order.</p>
+<br>
+<form method = "post" action ="/pizza-orders">
+  <label for="first-name">First name:</label>
+  <input id="first-name" type="text" name = "first_name"/>
+
+  <label for="last-name">Last name:</label>
+  <input for="last-name" type="text" name= "last_name"/>
+
+  <label for="pizza-select">Select a Pizza</label>
+  <select name="topping" id="pizza-select"><
+    <option value="Margherita">Margherita</option>
+    <option value="Hawaiian">Hawaiian</option>
+  </select>
+
+  <label for="quantity">Quantity</label>
+  <input type="number" id="quantity" name="quantity"/>
+
+  <input type="submit" value="Order Pizza"/>
+</form>
